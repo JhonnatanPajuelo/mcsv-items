@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 import java.util.Optional;
 
-@FeignClient(name = "products", url = "localhost:8080/Products")
+@FeignClient(name = "products",path = "/Products")
 public interface PruductFeignClient {
     @GetMapping("/getAll")
     List<ProductResponse> getAll();

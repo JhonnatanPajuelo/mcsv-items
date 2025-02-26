@@ -15,5 +15,6 @@ public class ProductResponse {
     private String name;
     private Double price;
     private LocalDateTime createAt;
+    private int port;
 
 }
